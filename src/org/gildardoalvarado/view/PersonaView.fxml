@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gildardoalvarado.Controller.PersonaController">
+   <children>
+      <Button fx:id="btnagregar" layoutX="130.0" layoutY="241.0" mnemonicParsing="false" onAction="#agregar" prefHeight="47.0" prefWidth="96.0" text="Agregar" />
+      <Label fx:id="lblnombre" layoutX="61.0" layoutY="116.0" text="Nombre">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="lblapellido" layoutX="61.0" layoutY="146.0" text="Apellido">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="lbltelefono" layoutX="61.0" layoutY="179.0" text="Telefono">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TableView fx:id="tblPersona" layoutX="345.0" layoutY="85.0" prefHeight="200.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
+            <TableColumn fx:id="colTelefono" prefWidth="75.0" text="Telefono" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNombre" layoutX="167.0" layoutY="112.0" />
+      <TextField fx:id="txtApellido" layoutX="167.0" layoutY="142.0" />
+      <TextField fx:id="txtTelefono" layoutX="167.0" layoutY="175.0" />
+      <Label fx:id="lblnombre1" layoutX="237.0" layoutY="14.0" text="Persona">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
